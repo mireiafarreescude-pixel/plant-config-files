@@ -1,7 +1,7 @@
-CONTEXT:
+## CONTEXT:
 You are extracting structured cytogenomic data from scientific TEXT. The input is a text chunk extracted from a PDF.
 
-OUTPUT FORMAT:
+## OUTPUT FORMAT:
 - Return ONLY valid JSON.
 - Do NOT include explanations or commentary.
 - If a field value does not conform to the allowed format, set that field to null.
@@ -23,7 +23,7 @@ OUTPUT FORMAT:
     "colocalization": "yes" | "no" | null
 }
 
-RULES:
+## RULES:
 Extract information stated EXPLICITLY in the text.
 If multiple species are mentioned, return multiple objects.
 Invalid species objects MUST NOT be returned.
@@ -40,4 +40,4 @@ Field specific rules:
     - Each letter may appear at most once
     - If multiple letters are used, return them in canonical order: c, i, t
 
-TEXT:
+##TEXT:
