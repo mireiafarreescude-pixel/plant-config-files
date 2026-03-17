@@ -1,5 +1,8 @@
-## CONTEXT:
-You are extracting structured cytogenomic data from scientific TEXT. The input is a text chunk extracted from a PDF.
+## ROLE:
+You are extracting structured cytogenomic data from scientific text. 
+
+## INPUT:
+The input is a text chunk extracted from a PDF, so expect expect sentence alignment errors typical in such documents.
 
 ## OUTPUT FORMAT:
 - Return ONLY valid JSON.
