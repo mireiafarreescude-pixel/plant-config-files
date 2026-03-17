@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "properties": {
+    "rDNA_5s_sites": {
+      "description": "Total number of 5S rDNA FISH signals in a somatic metaphase cell as an integer. If only loci/chromosome pairs are provided, convert to total signals only when certainty is possible. Assign null when total cannot be determined with certainty.",
+      "type": ["integer", "null"],
+      "minimum": 1
+    }
+  },
+  "required": ["rDNA_5s_sites"]
+}

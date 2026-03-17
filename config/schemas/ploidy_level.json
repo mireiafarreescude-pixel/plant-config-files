@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "properties": {
+    "ploidy_level": {
+      "description": "Ploidy level as an explicitly stated integer. Do not infer ploidy and do not assume diploidy. Assign null if not explicitly stated.",
+      "type": ["integer", "null"],
+      "minimum": 1
+    }
+  },
+  "required": ["ploidy_level"]
+}

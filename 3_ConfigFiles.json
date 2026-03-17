@@ -1,0 +1,18 @@
+{
+  "systemPrompt": "https://raw.githubusercontent.com/mireiafarreescude-pixel/plant-config-files/refs/heads/main/3_Prompt.txt",
+  "schemaFiles": [
+    "https://raw.githubusercontent.com/mireiafarreescude-pixel/plant-config-files/refs/heads/main/config/schemas/genus.json",
+    "https://raw.githubusercontent.com/mireiafarreescude-pixel/plant-config-files/refs/heads/main/config/schemas/specific_epithet.json",
+    "https://raw.githubusercontent.com/mireiafarreescude-pixel/plant-config-files/refs/heads/main/config/schemas/other_specifications.json",
+    "https://raw.githubusercontent.com/mireiafarreescude-pixel/plant-config-files/refs/heads/main/config/schemas/ploidy_level.json",
+    "https://raw.githubusercontent.com/mireiafarreescude-pixel/plant-config-files/refs/heads/main/config/schemas/chromosome_number_2n.json",
+    "https://raw.githubusercontent.com/mireiafarreescude-pixel/plant-config-files/refs/heads/main/config/schemas/rDNA_5s_sites.json",
+    "https://raw.githubusercontent.com/mireiafarreescude-pixel/plant-config-files/refs/heads/main/config/schemas/rDNA_5s_range.json",
+    "https://raw.githubusercontent.com/mireiafarreescude-pixel/plant-config-files/refs/heads/main/config/schemas/rDNA_5s_position.json",
+    "https://raw.githubusercontent.com/mireiafarreescude-pixel/plant-config-files/refs/heads/main/config/schemas/rDNA_35s_sites.json",
+    "https://raw.githubusercontent.com/mireiafarreescude-pixel/plant-config-files/refs/heads/main/config/schemas/rDNA_35s_range.json",
+    "https://raw.githubusercontent.com/mireiafarreescude-pixel/plant-config-files/refs/heads/main/config/schemas/rDNA_35s_position.json",
+    "https://raw.githubusercontent.com/mireiafarreescude-pixel/plant-config-files/refs/heads/main/config/schemas/colocalization.json"
+  ]
+}
+

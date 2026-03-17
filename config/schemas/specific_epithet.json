@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "properties": {
+    "specific_epithet": {
+      "description": "Specific epithet extracted exactly as explicitly stated in the text. Assign null if missing or not explicit.",
+      "type": ["string", "null"],
+      "minLength": 1
+    }
+  },
+  "required": ["specific_epithet"]
+}

@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "properties": {
+    "genus": {
+      "description": "Genus name extracted exactly as explicitly stated in the text. Assign null if missing or not explicit.",
+      "type": ["string", "null"],
+      "minLength": 1
+    }
+  },
+  "required": ["genus"]
+}

@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "properties": {
+    "rDNA_5s_position": {
+      "description": "Allowed positional codes are only c, i, t where c=(peri)centromeric, i=interstitial, t=(sub)terminal. Letters may appear at most once and, if multiple are present, must be in canonical order c, i, t. Assign null if invalid or absent.",
+      "type": ["string", "null"],
+      "enum": ["c", "i", "t", "ci", "ct", "it", "cit", null]
+    }
+  },
+  "required": ["rDNA_5s_position"]
+}

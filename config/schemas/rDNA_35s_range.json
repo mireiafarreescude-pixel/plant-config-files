@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "properties": {
+    "rDNA_35s_range": {
+      "description": "Text range or variability expression for 35S rDNA signal counts when explicitly stated. Assign null if absent or invalid.",
+      "type": ["string", "null"],
+      "minLength": 1
+    }
+  },
+  "required": ["rDNA_35s_range"]
+}

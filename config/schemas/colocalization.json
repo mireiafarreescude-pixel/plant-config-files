@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "properties": {
+    "colocalization": {
+      "description": "Whether 5S and 35S rDNA are co-localized when explicitly stated in the text.",
+      "type": ["string", "null"],
+      "enum": ["yes", "no", null],
+      "enumDescriptions": [
+        "Assign 'yes' if co-localization is explicitly stated.",
+        "Assign 'no' if non-co-localization is explicitly stated.",
+        "Assign null if co-localization is not explicitly stated or unclear."
+      ]
+    }
+  },
+  "required": ["colocalization"]
+}

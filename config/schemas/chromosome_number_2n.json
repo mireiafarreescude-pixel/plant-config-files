@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "properties": {
+    "chromosome_number_2n": {
+      "description": "Somatic chromosome number (2n) as an explicitly stated integer. Assign null if absent or uncertain.",
+      "type": ["integer", "null"],
+      "minimum": 1
+    }
+  },
+  "required": ["chromosome_number_2n"]
+}

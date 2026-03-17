@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "properties": {
+    "other_specifications": {
+      "description": "Only subspecies, varieties, cultivars, hybrids, and biotype epithets are allowed. Assign null when absent or if value is outside this scope.",
+      "type": ["string", "null"],
+      "minLength": 1
+    }
+  },
+  "required": ["other_specifications"]
+}
