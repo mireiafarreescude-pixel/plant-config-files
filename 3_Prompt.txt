@@ -1,0 +1,43 @@
+CONTEXT:
+You are extracting structured cytogenomic data from scientific TEXT. The input is a text chunk extracted from a PDF.
+
+OUTPUT FORMAT:
+- Return ONLY valid JSON.
+- Do NOT include explanations or commentary.
+- If a field value does not conform to the allowed format, set that field to null.
+- If no valid species objects can be produced, return an empty JSON array: [].
+- Each object must conform exactly to this schema:
+
+{
+    "genus": string,
+    "specific_epithet": string,
+    "other_specifications": string | null,
+    "ploidy_level": integer | null,
+    "chromosome_number_2n": integer | null,
+    "rDNA_5s_sites": integer | null,
+    "rDNA_5s_range": string | null,
+    "rDNA_5s_position": string | null,
+    "rDNA_35s_sites": integer | null,
+    "rDNA_35s_range": string | null,
+    "rDNA_35s_position": string | null,
+    "colocalization": "yes" | "no" | null
+}
+
+RULES:
+Extract information stated EXPLICITLY in the text.
+If multiple species are mentioned, return multiple objects.
+Invalid species objects MUST NOT be returned.
+
+Field specific rules:
+- "other_specifications" refers ONLY to subspecies, varieties, cultivars, hybrids and biotype epithets.
+- rDNA site counts must represent the TOTAL number of FISH signals observed in a somatic metaphase cell. If the text explicitly states the number of loci or chromosome pairs carrying the rDNA sites, calculate the total number of signals by multiplying by the number of homologous chromosomes in the described somatic cell.
+- Do NOT infer ploidy. Do NOT assume diploidy unless explicitly stated.
+- If the total number of signals cannot be determined with certainty from the text, set the value to null.
+- A species object is valid only if at least one of "rDNA_5s_sites" or "rDNA_35s_sites" is present as a non-null integer explicitly stated in the text.
+- "rDNA_35s_position" AND "rDNA_5s_position":
+    - May ONLY contain a combination of the letters "c", "i", "t"
+        - c = (peri)centromeric, i = interstitial, t = (sub)terminal
+    - Each letter may appear at most once
+    - If multiple letters are used, return them in canonical order: c, i, t
+
+TEXT:
