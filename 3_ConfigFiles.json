@@ -1,5 +1,5 @@
 {
-  "systemPrompt": "https://raw.githubusercontent.com/mireiafarreescude-pixel/plant-config-files/refs/heads/main/3_Prompt.txt",
+  "systemPrompt": "https://raw.githubusercontent.com/mireiafarreescude-pixel/plant-config-files/refs/heads/main/Prompt_adapted.txt",
   "schemaFiles": [
     "https://raw.githubusercontent.com/mireiafarreescude-pixel/plant-config-files/refs/heads/main/config/schemas/genus.json",
     "https://raw.githubusercontent.com/mireiafarreescude-pixel/plant-config-files/refs/heads/main/config/schemas/specific_epithet.json",
