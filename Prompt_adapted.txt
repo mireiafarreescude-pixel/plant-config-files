@@ -14,7 +14,7 @@ Alongside the report, you will be given the following information enclosed withi
 
 ## TASK:
 
-Based on the provided pathology report and the JSON Schema, return a JSON object containing only the requested keys, with values accurately reflecting the report's contents. Ensure that you return all the requested keys in your JSON object.
+Based on the provided report and the JSON Schema, return a JSON object containing only the requested keys, with values accurately reflecting the report's contents. Ensure that you return all the requested keys in your JSON object.
 
 
 ## PROCESS:
